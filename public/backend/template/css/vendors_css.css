@@ -1,0 +1,28 @@
+/****************************/
+/** Imports Plugin css **/
+/****************************/
+@import url(../../assets/vendor_components/bootstrap/dist/css/bootstrap.css);
+
+@import url(../../assets/vendor_components/OwlCarousel2/dist/assets/owl.theme.default.css);
+@import url(../../assets/vendor_components/flexslider/flexslider.css);
+
+@import url(../../assets/vendor_components/datatable/datatables.min.css);
+
+@import url(../../assets/vendor_components/gallery/css/animated-masonry-gallery.css);
+
+@import url(../../assets/vendor_components/sweetalert/sweetalert.css);
+
+@import url(../../assets/vendor_components/select2/dist/css/select2.min.css);
+
+@import url(../../assets/vendor_components/gridstack/gridstack.css);
+
+@import url(../../assets/vendor_components/bootstrap-switch/switch.css);
+@import url(../../assets/vendor_components/c3/c3.min.css);
+
+
+
+@import url(../../assets/vendor_components/fullcalendar/fullcalendar.min.css);
+@import "../../assets/vendor_components/fullcalendar/fullcalendar.print.min.css" print;
+@import url(../../assets/vendor_components/weather-icons/weather-icons.css);
+
+/*# sourceMappingURL=vendors_css.css.map */

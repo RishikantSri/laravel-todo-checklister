@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.admin_master') 
 
 @section('content')
 <div class="container-fluid">
@@ -44,16 +44,19 @@
                         @csrf  
                         @method('DELETE')
                                         
-                        <button class="btn btn-sm btn-danger" onclick="return confirm(' {{ __('Are you sure to delete this Checklist ?' ) }}' )" type="submit">{{ __('Delete this checklist ') }}</button>
+                        <button class="btn btn-sm btn-danger" 
+                        onclick="return confirm( __('Are you sure ?') )" 
+                        type="submit">{{ __('Delete this checklist ') }}
+                    </button>
                     
                 </form>
                 <br>
                 <div class="card">
                     <div class="card-header"><h3>{{ __(' List of Tasks') }}</h3></div>
-                     @if ($errors->any())
+                     @if ($errors->storetask->any())
                             <div class="alert alert-danger">
                                 <ul>
-                                    @foreach ($errors->all() as $error)
+                                    @foreach ($errors->storetask->all() as $error)
                                         <li>{{ $error }}</li>
                                     @endforeach
                                 </ul>
@@ -69,14 +72,14 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="name">{{ __('Name') }}</label>
-                                    <input value="" class="form-control" name="name" type="text" placeholder="Enter tasks name"
+                                    <input value="{{ old('name')}}" class="form-control" name="name" type="text" placeholder=""
                                         >
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="name">{{ __('Description') }}</label>
-                                    <textarea name="name" class="form-control" id="" cols="30" rows="6"></textarea>
+                                    <textarea  name="description" class="form-control" id="" cols="30" rows="6">{{ old('description')}}</textarea>
                                 </div>
                             </div>
                         </div>

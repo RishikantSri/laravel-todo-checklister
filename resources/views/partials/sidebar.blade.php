@@ -53,7 +53,7 @@
                                 $group
                             )
                         }}">
-                        {{ __("Create New Checklist") }}
+                        
                     </a>
                 </li>
             </ul>

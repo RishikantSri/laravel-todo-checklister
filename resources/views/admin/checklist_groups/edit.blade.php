@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.admin_master') 
 
 @section('content')
 <div class="container-fluid">
@@ -44,7 +44,7 @@
                         @csrf  
                         @method('DELETE')
                                         
-                        <button class="btn btn-sm btn-danger" onclick="return confirm('{{ __('Are you sure to delete this group') }}')" type="submit">{{ __('Delete this checklist group') }}</button>
+                        <button class="btn btn-sm btn-danger" onclick="return confirm( __('Are you sure to delete this group') )" type="submit">{{ __('Delete this checklist group') }}</button>
                     
                 </form>
             </div>

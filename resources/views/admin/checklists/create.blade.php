@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.admin_master') 
 
 @section('content')
 <div class="container-fluid">
@@ -26,7 +26,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="name">{{ __('Name') }}</label>
-                                    <input class="form-control" name="name" type="text"
+                                    <input class="form-control" value="{{ old('name')}} name="name" type="text"
                                         placeholder="{{ __('Enter Checklist Name') }}">
                                 </div>
                             </div>
